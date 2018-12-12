@@ -30,7 +30,7 @@
 
                 method:"post",
                 url:"/returnObject.do",
-                success:function (result) {
+                success:function (result) {    //这里的result，指定jsonType为json，返回的是json格式的数据，{"code":0,"data":"result"}，code为状态码，data为返回的数据，直接通过result.data获取数据，result.code获取状态码，成功即为0
                     alert(result)
                 }
             })
